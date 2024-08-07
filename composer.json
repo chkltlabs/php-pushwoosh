@@ -1,0 +1,25 @@
+{
+    "name": "chkltlabs/php-pushwoosh",
+    "description": "PHP Pushwoosh Api SDK",
+    "type": "library",
+    "require": {
+        "nimbly/shuttle": "^1.0",
+        "psr/http-client": "^1.0",
+        "psr/http-message": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Chkltlabs\\PhpPushwoosh\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "chkltlabs",
+            "email": "chkltlabs@gmail.com"
+        }
+    ]
+}
