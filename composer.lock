@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17151ba64ce563482c87ba9f265e25cd",
+    "content-hash": "a454aadfc0f93a7f31bdd9545a7d7786",
     "packages": [
         {
             "name": "nimbly/capsule",
@@ -1920,7 +1920,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=8.0"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
