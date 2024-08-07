@@ -4,32 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a454aadfc0f93a7f31bdd9545a7d7786",
+    "content-hash": "5043b5c042fc696dba160cf8b5cf5381",
     "packages": [
         {
             "name": "nimbly/capsule",
-            "version": "2.0.2",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nimbly/Capsule.git",
-                "reference": "fe25b8e84a1f1e882469a04fd764226d5b5f9bd7"
+                "reference": "1ffd0f530621b0fa7a85c0e27ba101cf061dfe0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nimbly/Capsule/zipball/fe25b8e84a1f1e882469a04fd764226d5b5f9bd7",
-                "reference": "fe25b8e84a1f1e882469a04fd764226d5b5f9bd7",
+                "url": "https://api.github.com/repos/nimbly/Capsule/zipball/1ffd0f530621b0fa7a85c0e27ba101cf061dfe0f",
+                "reference": "1ffd0f530621b0fa7a85c0e27ba101cf061dfe0f",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.0",
+                "php": ">=7.3|^8.0",
                 "psr/http-factory": "^1.0",
-                "psr/http-message": "^1.0|^2.0"
-            },
-            "provide": {
-                "psr/http-factory-implementation": "^1.0",
-                "psr/http-message-implementation": "^1.0"
+                "psr/http-message": "^1.0"
             },
             "require-dev": {
+                "php-coveralls/php-coveralls": "^2.4",
                 "phpunit/phpunit": "^9.0",
                 "symfony/var-dumper": "^4.3",
                 "vimeo/psalm": "^4.0"
@@ -37,7 +34,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Nimbly\\Capsule\\": "src/"
+                    "Capsule\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -53,46 +50,46 @@
             "description": "Capsule is a simple PSR-7 HTTP message and PSR-17 HTTP factory implementation.",
             "support": {
                 "issues": "https://github.com/nimbly/Capsule/issues",
-                "source": "https://github.com/nimbly/Capsule/tree/2.0.2"
+                "source": "https://github.com/nimbly/Capsule/tree/1.1.2"
             },
-            "time": "2024-05-26T16:11:06+00:00"
+            "time": "2021-06-17T20:22:27+00:00"
         },
         {
             "name": "nimbly/shuttle",
-            "version": "1.0.1",
+            "version": "0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nimbly/Shuttle.git",
-                "reference": "7aad232168b790ca11c843ab8ce4d3f320d84862"
+                "reference": "b3f36e398608922e0590c2954f14b5fa5fec01ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nimbly/Shuttle/zipball/7aad232168b790ca11c843ab8ce4d3f320d84862",
-                "reference": "7aad232168b790ca11c843ab8ce4d3f320d84862",
+                "url": "https://api.github.com/repos/nimbly/Shuttle/zipball/b3f36e398608922e0590c2954f14b5fa5fec01ba",
+                "reference": "b3f36e398608922e0590c2954f14b5fa5fec01ba",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "nimbly/capsule": "^2.0",
-                "php": "^8.0",
+                "nimbly/capsule": "^1.0",
+                "php": ">=7.2",
                 "psr/http-client": "^1.0"
-            },
-            "provide": {
-                "psr/http-client-implementation": "^1.0"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^9.0",
+                "phpunit/phpunit": "^8.0",
                 "symfony/var-dumper": "^4.2",
-                "vimeo/psalm": "^4.0"
+                "vimeo/psalm": "^3.0"
             },
             "suggest": {
                 "ext-curl": "Use cURL library to make HTTP calls."
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
                 "psr-4": {
-                    "Nimbly\\Shuttle\\": "src/"
+                    "Shuttle\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -102,7 +99,7 @@
             "authors": [
                 {
                     "name": "Brent Scheffler",
-                    "email": "brent@brentscheffler.com"
+                    "email": "brent@nimbly.io"
                 }
             ],
             "description": "Simple PSR-18 HTTP client.",
@@ -116,9 +113,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nimbly/Shuttle/issues",
-                "source": "https://github.com/nimbly/Shuttle/tree/1.0.1"
+                "source": "https://github.com/nimbly/Shuttle/tree/master"
             },
-            "time": "2024-05-12T16:40:48+00:00"
+            "time": "2020-03-15T23:50:44+00:00"
         },
         {
             "name": "psr/http-client",
@@ -229,16 +226,16 @@
         },
         {
             "name": "psr/http-message",
-            "version": "2.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
-                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
@@ -247,7 +244,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -262,7 +259,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
+                    "homepage": "http://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP messages",
@@ -276,9 +273,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/2.0"
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "time": "2023-04-04T09:54:51+00:00"
+            "time": "2023-04-04T09:50:52+00:00"
         }
     ],
     "packages-dev": [

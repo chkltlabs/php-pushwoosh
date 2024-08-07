@@ -21,8 +21,8 @@ use Chkltlabs\PhpPushwoosh\Resources\Tags;
 use Chkltlabs\PhpPushwoosh\Resources\TestDevices;
 use Chkltlabs\PhpPushwoosh\Resources\Users;
 use Chkltlabs\PhpPushwoosh\Traits\HasCachedResources;
-use Nimbly\Shuttle\Shuttle;
 use Psr\Http\Client\ClientInterface;
+use Shuttle\Shuttle;
 
 /**
  * @property Applications $applications

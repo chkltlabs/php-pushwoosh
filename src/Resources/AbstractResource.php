@@ -3,8 +3,8 @@
 namespace Chkltlabs\PhpPushwoosh\Resources;
 
 use Chkltlabs\PhpPushwoosh\PushwooshRequestException;
-use Nimbly\Capsule\Request;
-use Nimbly\Shuttle\Shuttle;
+use Capsule\Request;
+use Shuttle\Shuttle;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\RequestInterface;
