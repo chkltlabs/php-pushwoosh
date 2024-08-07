@@ -101,4 +101,14 @@ class Pushwoosh
 
         return $this->httpClient;
     }
+
+    public function setApiKey(string $api_key): void
+    {
+        $this->api_key = $api_key;
+    }
+
+    public function setProjectId(string $project_id): void
+    {
+        $this->project_id = $project_id;
+    }
 }
